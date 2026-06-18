@@ -1,0 +1,22 @@
+[package]
+name = "xash3d-colored"
+description = "Colored strings in Xash3D game engine"
+version = "0.1.0"
+authors = ["Denis Drakhnia <numas13@gmail.com>"]
+edition = "2021"
+rust-version = "1.56"
+license = "MIT"
+repository = "https://github.com/numas13/xash3d-colored"
+keywords = ["xash3d", "color", "string"]
+
+[features]
+default = ["split", "colorize"]
+alloc = []
+std = ["alloc"]
+colorize = []
+split = []
+
+[package.metadata.docs.rs]
+all-features = true
+default-target = "x86_64-unknown-linux-gnu"
+targets = []
